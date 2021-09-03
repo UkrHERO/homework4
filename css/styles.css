@@ -109,7 +109,7 @@ p {
 }
 
 .header-contact:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .header-contact:hover,
@@ -124,9 +124,13 @@ p {
 /* Main */
 
 .hero {
+  max-width: 1600px;
+  max-height: 600px;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(62, 70, 160, 0.4)),
+    url("../images/hero-background.jpg");
 }
 
 .hero-title {
@@ -174,6 +178,7 @@ p {
 }
 
 .features-title {
+  margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -281,6 +286,25 @@ p {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+/* Icons */
+
+.icon-features {
+  background-color: var(--bg-color);
+  border-radius: 4px;
+}
+
+.icon-features-list {
+  margin: 25px 100px;
+}
+
+.icon-mail {
+  margin-right: 10px;
+  fill: var(--main-color);
+}
+.icon-mail:hover {
+  fill: var(--accent-color);
 }
 
 /* Portfolio */
