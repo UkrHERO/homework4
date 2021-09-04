@@ -117,6 +117,11 @@ p {
   color: var(--accent-color);
 }
 
+.icon-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .list {
   list-style-type: none;
 }
@@ -129,7 +134,10 @@ p {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(62, 70, 160, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url("../images/hero-background.jpg");
 }
 
@@ -251,6 +259,11 @@ p {
   margin-right: 30px;
 }
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Footer */
 
 .footer {
@@ -263,6 +276,7 @@ p {
 .footer-cont {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 
 .address {
@@ -288,6 +302,19 @@ p {
   color: var(--accent-color);
 }
 
+.footer-title {
+  text-transform: uppercase;
+  color: var(--third-color);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.icon-footer {
+  display: block;
+  margin-left: 70px;
+}
 /* Icons */
 
 .icon-features {
@@ -299,12 +326,109 @@ p {
   margin: 25px 100px;
 }
 
-.icon-mail {
-  margin-right: 10px;
-  fill: var(--main-color);
+.icon-team {
+  display: flex;
+  align-items: center;
+  margin: 16px 32px 30px 32px;
 }
-.icon-mail:hover {
-  fill: var(--accent-color);
+
+.icon-link {
+  display: inline-flex;
+}
+
+.icon-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  border: none;
+  color: #afb1b8;
+  background-color: var(--third-color);
+  padding: 12px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.icon-button:last-child {
+  margin-right: 0;
+}
+
+.icon-social {
+  fill: currentColor;
+}
+
+.icon-button:hover {
+  color: var(--third-color);
+  background-color: var(--accent-color);
+}
+
+.clients-icon {
+  display: inline-flex;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.icon-item-clients {
+  margin-right: 30px;
+}
+
+.icon-item-clients :last-child {
+  margin-right: 0;
+}
+
+.icon-button-clients {
+  margin: 0;
+  padding: 0;
+  color: #afb1b8;
+  background-color: var(--third-color);
+  padding: 16px 32px;
+  border-width: 1px;
+  border-color: #afb1b8;
+  border-style: solid;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.icon-button-clients:last-child {
+  margin-right: 0;
+}
+
+.icon-clients {
+  fill: currentColor;
+}
+
+.icon-button-clients:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.icon-button-footer {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  border: none;
+  color: var(--third-color);
+  background-color: #44454e;
+  padding: 12px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.icon-button-footer:last-child {
+  margin-right: 0;
+}
+
+.icon-social-footer {
+  fill: currentColor;
+}
+
+.icon-button-footer:hover {
+  color: var(--third-color);
+  background-color: var(--accent-color);
 }
 
 /* Portfolio */
@@ -337,6 +461,7 @@ p {
 .filter:focus {
   background-color: var(--accent-color);
   color: var(--third-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .list-button {
@@ -388,6 +513,10 @@ p {
 .project-item {
   margin-right: 30px;
   margin-top: 30px;
+}
+
+.project-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-item:nth-child(-n + 3) {

@@ -35,8 +35,16 @@
                 </ul>
             </nav>
             <div class="contacts-header">
-                <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="header-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="header-contact" href="mailto:info@devstudio.com">
+                    <svg class="icon-mail" width="16" height="12">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                <a class="header-contact" href="tel:+380961111111">
+                    <svg class="icon-mail" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
             </div>
         </div>
     </header>
@@ -157,14 +165,45 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-cont">
-            <a class="logo logo-first" href="./index.html"><span class="logo-title">Web</span><span
-                    class="logo-footer-second">Studio</span></a>
-            <address>
-                <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-                <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </address>
+            <div>
+                <a class="logo logo-first" href="./index.html"><span class="logo-title">Web</span><span
+                        class="logo-footer-second">Studio</span></a>
+                <address>
+                    <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+                    <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </address>
+            </div>
+    
+            <div class="icon-footer">
+                <h3 class="footer-title">Присоединяйтесь</h3>
+                <button class="icon-button-footer" type="button">
+                    <svg class="icon-social-footer" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </button>
+    
+                <button class="icon-button-footer" type="button">
+                    <svg class="icon-social-footer" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </button>
+    
+                <button class="icon-button-footer" type="button">
+                    <svg class="icon-social-footer" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </button>
+    
+                <button class="icon-button-footer" type="button">
+                    <svg class="icon-social-footer" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </button>
+            </div>
+    
         </div>
+    
     </footer>
 
 </body>
