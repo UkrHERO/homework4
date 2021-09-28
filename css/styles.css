@@ -29,11 +29,12 @@ h6,
 ul,
 p {
   margin: 0;
+  padding: 0;
 }
 
 /* Header */
 
-.head {
+.header {
   border: 1px solid #ececec;
 }
 
@@ -56,7 +57,6 @@ p {
 
 .ul-nav {
   display: flex;
-  margin: 0;
 }
 
 .item-nav:not(:last-child) {
@@ -69,7 +69,7 @@ p {
 }
 
 .logo {
-  padding-right: 93px;
+  margin-right: 93px;
 
   font-family: Raleway;
   font-weight: 700;
@@ -97,6 +97,8 @@ p {
 }
 
 .header-contact {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -127,6 +129,11 @@ p {
 }
 
 /* Main */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .hero {
   max-width: 1600px;
@@ -176,9 +183,9 @@ p {
   padding: 0;
 }
 
-.container .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section.features {
+  /* padding-top: 0; */
+  padding-bottom: 0;
 }
 
 .features .list-item:not(:last-child) {
@@ -208,7 +215,7 @@ p {
 .container .list-description {
   display: flex;
   padding: 0;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
   margin-top: 50px;
 }
 
@@ -220,9 +227,9 @@ p {
   background-color: var(--bg-color);
 }
 
-.team-title-main {
+/* .team-title-main {
   padding-top: 94px;
-}
+} */
 
 .team-title {
   margin-top: 30px;
@@ -252,7 +259,7 @@ p {
   display: flex;
   padding: 0;
   margin-top: 50px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 
 .container .team:not(:last-child) {
@@ -467,11 +474,7 @@ p {
 .list-button {
   display: flex;
   justify-content: center;
-}
-
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-bottom: 50px;
 }
 
 .project-link {
@@ -501,30 +504,18 @@ p {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
-  padding: 0;
-  margin-right: 30px;
-}
-
-.project-list {
-  margin-right: 0;
+  margin-right: -30px;
+  margin-top: -30px;
 }
 
 .project-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-top: 30px;
 }
 
 .project-item:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.project-item:nth-child(-n + 3) {
-  margin-top: 0;
-}
-
-.project-item:nth-child(3n + 3) {
-  margin-right: 0;
 }
 
 .card-description {
@@ -534,4 +525,6 @@ p {
 
 .img-desc {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
