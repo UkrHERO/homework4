@@ -108,6 +108,7 @@ p {
 
 .contacts-header {
   margin-left: auto;
+  display: flex;
 }
 
 .header-contact:not(:last-child) {
